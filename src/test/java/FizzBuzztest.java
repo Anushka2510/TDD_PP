@@ -25,4 +25,11 @@ public class FizzBuzztest {
         assertEquals("FizzBuzz",result);
 
     }
+    @Test
+    public void shouldreturnnumberifnumberisdivisibleby3nor5(){
+        final FizzBuzz fizzBuzz = new FizzBuzz();
+        final String result = FizzBuzz.convert(7);
+        assertEquals("7",result);
+
+    }
 }
