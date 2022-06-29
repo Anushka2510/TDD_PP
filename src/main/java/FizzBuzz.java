@@ -1,11 +1,15 @@
 public class FizzBuzz {
-   public static String convert(int i) {
-        if(i%3==0 && i%5==0)
+   public static String convert(int number) {
+        if(divisibleby(number, 3) && divisibleby(number, 5))
             return "FizzBuzz";
-        if(i%3==0)
+        if(divisibleby(number, 3))
             return "Fizz";
-        if(i%5==0)
+        if(divisibleby(number, 5))
             return "Buzz";
-        return Integer.toString(i);
+        return Integer.toString(number);
+    }
+
+    private static boolean divisibleby(int dividend, int divisor) {
+        return dividend % divisor == 0;
     }
 }
