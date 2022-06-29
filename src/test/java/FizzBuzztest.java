@@ -18,4 +18,11 @@ public class FizzBuzztest {
         assertEquals("Buzz",result);
 
     }
+    @Test
+    public void shouldreturnfizzbuzzifnumberisdivisibleby3and5(){
+        final FizzBuzz fizzBuzz = new FizzBuzz();
+        final String result = FizzBuzz.convert(15);
+        assertEquals("FizzBuzz",result);
+
+    }
 }
